@@ -5,3 +5,7 @@ router=APIRouter(prefix="/health",tags=["health"])
 @router.get("/")
 def health():
     return{"message":"I am rahul"}
+
+@router.get("/version")
+def version():
+    return{"version":"1.0.0"}
